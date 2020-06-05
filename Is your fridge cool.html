@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html> 
+<head>
+    <title >
+        Is your fridge cool?        
+    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width= device-width, initial-scale=1">
+    <meta name="description" content="Progetto Reti di Dati">
+    <meta name="keyword" content="Sensori, dht11, html, css, università, progetto">
+    <meta name="author" content="Morganti Claudio, Rinella Claudio, Crestini Riccardo" >
+    <meta http-equiv="refresh" content="600">
+    <link rel="stylesheet" href="styles.css">
+    
+</head>    
+<body>
+    <header id="top">
+        <h1>
+            Is your fridge cool?
+        </h1>
+        <h3>
+            <button><a href="Is%20your%20fridge%20cool.html"><h4>Aggiorna</h4></a></button>
+        </h3>
+    </header>
+    
+    <nav>
+        <table class="menu">
+            <tr>
+                <th><a href="#S1">Temperatura Sensore</a></th>
+                <th><a href="#S2">Temperatura Database Esterno</a></th>
+                <th><a href="#S3">Temperatura Esterna</a></th>
+                <th><a href="#S4">Temperatura Interna</a></th>
+                <th><a href="#S5">Motore</a></th>
+            </tr>
+        </table>
+    </nav>
+    
+	<!--first-->
+    <section id="S1">
+        <aside class="left">
+            <h1>
+                <a href="">TempSens°C</a>
+            </h1>
+        </aside>
+        <article class="right">
+            <h3>
+                La temperatura del sensore DHT11 
+            </h3>
+            <p>
+                Questa temperatura viene direttamente misurata dal sensore DHT11 collegato alla nostra scheda ESP8266
+            </p>
+            <p>
+                <span><a href="#top">Torna su</a></span>
+            </p>
+		</article>	
+	</section>
+	
+	<!--second-->	
+	<section id="S2">
+          <article class="left">
+            <h3>
+                La temperatura estratta dal database esterno
+            </h3>
+            <p>
+                Questa temperatura viene raccolta dal database fornito dal professor Caputo
+            </p>
+            <p>
+                <span><a href="#top">Torna su</a></span>
+            </p>
+		</article>
+        <aside class="right">
+            <h1>
+                <a href="">TempData°C</a>
+            </h1>
+        </aside>
+	</section>
+	
+	<!--third-->
+	<section id="S3">
+        <aside class="left">
+            <h1>
+                <a href="">TempExt°C</a>
+            </h1>
+        </aside>
+        <article class="right">
+            <h3>
+                La temperatura esterna 
+            </h3>
+            <p>
+                Questa temperatura viene calcolata facendo la media fra quella misurata dal sensore DHT11 collegato alla nostra scheda ESP8266 e la temperatura fornita dal database esterno fornito dal professor Caputo
+            </p>
+            <p>
+                <span><a href="#top">Torna su</a></span>
+            </p>
+		</article>	
+	</section>
+	
+	<!--fourth-->
+	<section id="S4">
+        <article class="left">
+            <h3>
+                La temperatura interna
+            </h3>
+            <p>
+                Questa temperatura viene calcolata tramite le formule del compito assegnato in funzione del motore
+            </p>
+            <p>
+                <span><a href="#top">Torna su</a></span>
+            </p>
+		</article>
+		<aside class="right">
+            <h1>
+                <a href="Rigastini%20Frigoriferi.html">TempInt°C</a>
+            </h1>
+        </aside>	
+	</section>
+	
+	<!--fifth-->
+	<section id="S5">
+        <aside class="left">
+            <h1>
+                <a href="Rigastini%20Frigoriferi.html">ON/OFF</a>
+            </h1>
+        </aside>
+        <article class="right">
+            <h3>
+                Motore 
+            </h3>
+            <p>
+                E la situazione attuale del motore, se è acceso il motore la temperatura interna sta diminuendo, se spento la temperatura interna sta aumentando
+            </p>
+            <button><a href=\"/state=!state\"><h4>Aggiorna</h4></a></button>
+            <p>
+                <span><a href="#top">Torna su</a></span>
+            </p>
+		</article>	
+	</section>
+	
+    <footer>
+        <table class="foot">
+            <tr>
+                <th><a href="#top">Claudio Morganti</a></th>
+                <th><a href="">Riccardo Crestini</a></th>
+                <th><a href="">Claudio Aglieri Rinella</a></th>
+            </tr>
+        </table>
+    </footer>
+</body>
